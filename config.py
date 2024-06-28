@@ -5,11 +5,11 @@ import os
 load_dotenv()
 
 # Telegram API credentials obtained from https://my.telegram.org/auth
-API_ID = int(os.getenv("API_ID"))  # Your Telegram API ID
-API_HASH = os.getenv("API_HASH")  # Your Telegram API Hash
+API_ID = int(os.getenv("20244111"))  # Your Telegram API ID
+API_HASH = os.getenv("b76d27da2a4220fe109fe9ef0e866530")  # Your Telegram API Hash
 
 # List of Telegram bot tokens used for file upload/download operations
-BOT_TOKENS = os.getenv("BOT_TOKENS", "").strip(", ").split(",")
+BOT_TOKENS = os.getenv("BOT_TOKENS", "6284593444:AAH8lXfxllWZ4Xt8BcP6kIsto8nx4kRoSLI").strip(", ").split(",")
 BOT_TOKENS = [token.strip() for token in BOT_TOKENS if token.strip() != ""]
 
 # List of Premium Telegram Account Pyrogram String Sessions used for file upload/download operations
@@ -19,11 +19,11 @@ STRING_SESSIONS = [
 ]
 
 # Chat ID of the Telegram storage channel where files will be stored
-STORAGE_CHANNEL = int(os.getenv("STORAGE_CHANNEL"))  # Your storage channel's chat ID
+STORAGE_CHANNEL = int(os.getenv("-1001806676469"))  # Your storage channel's chat ID
 
 # Message ID of a file in the storage channel used for storing database backups
 DATABASE_BACKUP_MSG_ID = int(
-    os.getenv("DATABASE_BACKUP_MSG_ID")
+    os.getenv("4795")
 )  # Message ID for database backup
 
 # Password used to access the website's admin panel
